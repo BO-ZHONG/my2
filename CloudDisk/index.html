@@ -1,0 +1,250 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>云盘项目</title>
+<link rel="stylesheet" href="css/index.css"></link>
+</head>
+
+<body>
+  <div class="zh">
+   <div id="head">
+       <div id="head-icon">
+           <a href="javascript:;">我的云盘</a>
+       </div>
+       <div id="head-list" class="head-list">
+             <div id="user-head" class="user-head">
+                 <a href="">
+                    <span class="user-print">
+                         <img src="img/head.jpg">
+                    </span>
+                    <em class="icon"></em>
+                 </a>
+             </div>
+         <div id="user-list" class="user-list">
+              <div class="user-name">
+                  <span>我的名字</span>
+              </div>
+               <ul class="list-menu">
+                   <li><a href="#">开通会员</a></li>
+                   <li><a href="#">留言板</a></li>
+                   <li><a href="#">退出</a></li>
+               </ul> 
+         </div>
+       </div>
+   </div>
+   <div id="toolMenu" class="toolMenu">
+        <a href="#" class="download" id="download">
+           <i class="icon"></i>
+           <span class="text">下载</span>
+        </a>
+        <a href="#" class="share" id="share">
+           <i class="icon"></i>
+           <span class="text">分享</span>
+        </a>
+        <a href="#" class="newfolder" id="newfolder">
+           <i class="icon"></i>
+           <span class="text">新建文件夹</span>
+        </a>
+        <a href="#" class="rename" id="rename">
+           <i class="icon"></i>
+           <span class="text">重命名</span>
+        </a>
+        <a href="#" class="cancle" id="cancle">
+           <i class="icon"></i>
+           <span class="text">删除</span>
+        </a>
+        <a href="#" class="move" id="move">
+           <i class="icon"></i>
+           <span class="text">移动</span>
+        </a>
+        <a href="#" class="refresh" id="refresh">
+           <i class="icon"></i>
+           <span class="text">刷新</span>
+        </a>
+        <div class="view ">
+             <a id="changeView" class="changeView" data-view='view' href="#" title="切换视图">
+                <i class="icon"></i>
+             </a>
+             <div id="viewMode" class="viewMode">
+                 <a href="#" class="sortMode">
+                    <i class="icon icon1"></i>
+                    <i class="icon icon2"></i>
+                 </a>
+                 <div id="sortMode-list" class="sortMode-list" style="display:none">
+                      <ul>
+                         <li>
+                             <a href="#" class="timers">
+                                 <i class="icon"></i>
+                                 <span>按时间排序</span>
+                             </a>
+                         </li>
+                         <li>
+                             <a href="#" class="length">
+                               <i class="icon"></i>
+                               <span>按字母排序</span>
+                             </a>
+                         </li>
+                         <li>
+                             <a href="#" class="small">
+                               <i class="icon"></i>
+                               <span>显示缩略图</span>
+                             </a>
+                         </li>
+                      </ul>
+                 </div>
+             </div>
+        </div>
+       
+   </div> 
+   <div class="mainView" id="mainView">
+            <div class="leftView">
+               <div class="treeMenu" id="treeMenu">
+                     <!--<ul>
+                         <li>
+                             <div class="title" style="padding-left:14px;">
+                                  <i class="icon icon1"></i>
+                                  <i class="icon icon2"></i>
+                                  <span>全部文件</span>
+                             </div>
+                         </li>
+                     </ul>-->
+               </div>
+            </div>
+            <div class="rightView" id="panelArea">
+                 <div class="nav" id="nav">
+                     <div class="navbox">
+                          <a id="selectAll" class="selectAll" href="javascript:void(0)"></a>
+                          <ul id="breadNav" class="breadNav" >
+                              <!--<li>
+                                  <span class="currPath" >全部文件</span>
+                              </li>-->
+                          </ul>
+                     </div>
+                     
+                 </div>
+                 <div class="V-content" id="V-content">
+                     <div class="V-c1">
+                         <div id="filesView" class="filesView details">
+                              <!--<div class="files">
+                                   <div class="titles">
+                                       <a class="selectBox" href="javascript:void(0)"></a>
+                                        <span class="icon folderIcon"></span>
+                                        <p class="filename">赵目录1</p>
+                               </div>-->
+                         </div> 
+                         <div id="filesLists" class="filesLists details">
+                             <!-- <div class="files">
+                                   <div class="titles">
+                                       <a class="selectBox" href="javascript:void(0)"></a>
+                                        <span class="icon folderIcon"></span>
+                                        <span class="filename">赵目录1</span>
+                                   </div>
+                                   <div class="tools">
+                                        <a class="icon download" href="javascript:void(0)" title="下载"></a>
+                                        <a class="icon share" href="javascript:void(0)" title="分享"></a>
+                                        <a class="icon move" href="javascript:void(0)" title="移动"></a>
+                                        <a class="icon cancle" href="javascript:void(0)" title="删除"></a>
+                                   
+                                   </div>
+                                   <div class="timer">
+                                        <span>2016-09-07</span>
+                                   </div>
+                              </div>-->
+                         </div>
+                     </div>
+                 </div>
+            </div>
+   </div>
+</div>
+  <div id="hiden" class="hiden"></div>
+  <div id="share_1" class="share_1">
+       <div class="shareHead" id="shareHead">
+           请选择分享位置
+           <a href="#" class="close icon"></a>
+       </div>
+       <div class="share_C bdsharebuttonbox" data-tag="share_1">
+           <a class="bgs_qzone bds_qzone" data-cmd="qzone" href="#" title="分享到朋友圈">朋友圈</a>
+           <a class="bgs_weixin bds_weixin" data-cmd="weixin" href="#" title="分享到微信" >微信</a>
+           <a class="bgs_qq bds_sqq" data-cmd="sqq" href="#" title="分享到QQ好友">QQ好友</a>
+           <a class="bgs_mail bds_mail" data-cmd="mail" href="#" title="用电子邮件分享">电子邮件</a>
+           <a class="bgs_more bds_more" data-cmd="more" href="#" target="_blank">更多</a>
+           <script>
+
+					window._bd_share_config = {
+						common : {
+							bdText : '人生如戏，全靠演技，戏如人生，何必当真',	
+							bdDesc : '我想对你说：嘿嘿嘿',	
+							bdUrl : 'http://user.qzone.qq.com/'
+						},
+						share : [{
+							"bdSize" : 24
+						}]
+					}
+					with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+				
+</script>
+       </div>
+       <div class="shareEnd">
+            <a id="shareEnd" href="#">取消</a>
+       </div>
+       
+  </div>
+  <div id="moveLocation" class="moveLocation" style="display:none;z-index:100;">
+      <div class='m_title'>
+           <span>请选择要移动的位置</span>
+           <a class="close icon" href="javascript:void(0)"></a>
+      </div>
+      <div class="selarea">
+           <div class="fileName">
+                <span class="icon"></span>
+                <span class="name">基础课程</span>
+           </div>
+           <div id='treeMenuPanel' class="treeMenuPanel treeMenu">
+           
+           </div>
+      </div>
+      <div class="btnColse">
+          <a class="sure" href="javascript:void(0)">确定</a>
+          <a class="cancel" href="javascript:void(0)">取消</a>
+      </div>
+  
+  </div>
+ <!-- <div id="h_tips" class="h_tips">
+       <div class="t_head">
+           <span>友情提示</span>
+           <a href="javascript:void(0)" class="icon"></a> 
+       </div>
+       <div class="t_txt">
+           <p>您确定要删除吗？</p>
+       </div>
+       <div class="t_close">
+            <a href="javascript:void(0)" id="YES" class="">确定</a> 
+            <a href="javascript:void(0)" id="no" class="">取消</a> 
+       </div>
+  
+  </div>-->
+  <input id="getPidInput" value="0" type="hidden">     
+
+
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/提示框.js"></script>
+<script src="js/drag.js"></script>
+<script src="js/data.js"></script>
+<script src="js/dataContral.js"></script>
+<script src="js/dataEvent.js"></script>
+<script src="js/Tips.js"></script>
+<script src="js/拖.js"></script>
+<script src="js/index.js"></script>
+
+<script>
+console.time("test");
+$(function(){
+     Firing();	
+})
+
+console.timeEnd("test");
+</script>
+</body>
+</html>
