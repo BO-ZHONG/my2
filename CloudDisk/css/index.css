@@ -785,6 +785,37 @@ body,html{
     }
 .active{
 	background:#f0f3f6 ;
-	}	
+	}
+@keyframes rightB{
+    0%{
+       transform:translateY(0)
+	}
+	100%{
+       transform:translateY(-10px)
+	}
+}
+.rightB{
+   width:100px;
+   height:100px;
+   position:fixed;
+   right:0;
+   bottom:0;
+   border:1px solid #808080;
+   animation:rightB 0.1s infinite alternate;
+   z-index:100;
+   
+}
+.rightB:hover{
+  animation:none;
+}
+.rightB a{
+   display:block;
+   width:60px;
+   height:20px;
+   text-align:center;
+   border:1px solid #A0A0A4;
+   margin:10px ;
+   color:#2A0000;
+}
 																								
 						
